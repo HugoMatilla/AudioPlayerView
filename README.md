@@ -1,10 +1,11 @@
-#AudioViewPlayer
+#AudioPlayerView
 
-AudioViewPlayer is a view that loads audio from an url and have basic playback tools.
+AudioPlayerView is a view that loads audio from an url and have basic playback tools.
 
 It makes use of the Android [MediaPlayer](http://developer.android.com/intl/es/reference/android/media/MediaPlayer.html) library.
 
 ![alt text](./art/AudioPlayerView-Sample.gif)
+Unfortunately this gif doesn't play audio :) check the sample app to hear it.
 
 
 ## Import
@@ -19,18 +20,18 @@ Add the view to your xml.
 
 ```xml
 
-	<com.hugomatilla.audioplayerview.lib.AudioPlayerView
-	            android:id="@+id/audioplayerview"
-	            ...
-	/>
+    <com.hugomatilla.audioplayerview.AudioPlayerView
+                android:id="@+id/audioplayerview"
+                ...
+    />
 ```
 
 Use it in your Activity, Fragment or Custom View
 ```java
-	
-	String url = "url-to-your-mp3-file.mp3"
-	AudioPlayerView audioPlayerView = (AudioPlayerView) findViewById(R.id.audioplayerview);
-	audioPlayerView.withUrl(url);
+    
+    String url = "url-to-your-mp3-file.mp3"
+    AudioPlayerView audioPlayerView = (AudioPlayerView) findViewById(R.id.audioplayerview);
+    audioPlayerView.withUrl(url);
 ```
 ## Callbacks
 There are 3 callbacks:
@@ -42,8 +43,8 @@ There are 3 callbacks:
 `onAudioFinished`: When the audio has finished playing and is stopped.
 
 ```java
-	
-	audioPlayerView.setOnAudioPlayerViewListener(new AudioPlayerView.OnAudioPlayerViewListener() {
+    
+    audioPlayerView.setOnAudioPlayerViewListener(new AudioPlayerView.OnAudioPlayerViewListener() {
             @Override
             public void onAudioPreparing() {
                 spinner.setVisibility(View.VISIBLE);
@@ -76,8 +77,8 @@ If you prefer to use text, add the texts to the xml file, and `app:useIcons="fal
 
 ```xml
 
-	<com.hugomatilla.audioplayerview.lib.AudioPlayerView
-		...
+    <com.hugomatilla.audioplayerview.lib.AudioPlayerView
+        ...
         app:loadingText="loading..."
         app:playText="play"
         app:stopText="stop"
@@ -91,8 +92,8 @@ You can use your own icon fonts.
 
 ```xml
 
-	<com.hugomatilla.audioplayerview.lib.AudioPlayerView
-		...
+    <com.hugomatilla.audioplayerview.lib.AudioPlayerView
+        ...
         app:loadingText="@string/customLoadingIcon"
         app:playText="@string/customPlayIcon"
         app:stopText="@string/customStopIcon"
@@ -100,10 +101,12 @@ You can use your own icon fonts.
     />
 ``` 
 
+You can create your own icon fonts with [fontello.com/](http://fontello.com/)
+
 ##License
 The MIT License (MIT)
 
-Copyright (c) [2016] [Hugo Matilla]
+Copyright (c) 2016 Hugo Matilla
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
