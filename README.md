@@ -1,14 +1,25 @@
 #AudioPlayerView
 
-AudioPlayerView is a view that loads audio from an url and have basic playback tools.
+AudioPlayerView is an Android view that loads audio from an url and have basic playback tools.
 
 It makes use of the Android [MediaPlayer](http://developer.android.com/intl/es/reference/android/media/MediaPlayer.html) library.
 
-![alt text](./art/AudioPlayerView-Sample.gif)
+![alt text](./art/AudioPlayerView-Sample.gif)  
+
 Unfortunately this gif doesn't play audio :) check the sample app to hear it.
 
 
-## Import
+## Include
+
+Include the Gradle dependency
+
+```java
+
+    dependencies {
+        ...
+        compile 'com.hugomatilla:audioplayerview:1.0.0'
+    }
+```
 
 ##Permissions
 
