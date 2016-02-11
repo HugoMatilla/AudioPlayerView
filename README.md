@@ -81,7 +81,7 @@ The AudioPlayerView extends TextView, so you can do all of the things you would 
 ### Icons
 For the icons, AudioPlayerView uses icon fonts. When the audio is ready and playing it shows a stop icon, when is finished or it was never started it shows a play button and when is preparing it shows a spinner (spinning).
 
-The spinner icon makes the whole _textView_ spin, so if it has a background color and it is not a round shape you probably won't get what you expected (a rectagle spinning).
+The spinner icon makes the whole _textView_ spin, so if it has a background color and it is not a round shape you probably won't get what you expected (the icon to spin) but you will see the whole rectagle spinning. In the sample application you can see how to do it.
 
 ### Text
 If you prefer to use text, add the texts to the xml file, and `app:useIcons="false"`.
@@ -112,7 +112,7 @@ You can use your own icon fonts.
     />
 ``` 
 
-You can create your own icon fonts with [fontello.com/](http://fontello.com/)
+You can create your own icon fonts with [fontello.com](http://fontello.com/)
 
 ##License
 The MIT License (MIT)
