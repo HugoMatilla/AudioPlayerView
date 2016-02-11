@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AudioPalyerView</string>
+    <string name="loadingIcon">&#xe801;</string>
+    <string name="playIcon">&#xe802;</string>
+    <string name="stopIcon">&#xe803;</string>
+</resources>

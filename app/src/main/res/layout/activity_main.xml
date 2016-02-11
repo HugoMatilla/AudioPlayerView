@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hugomatilla.audioplayerview.sample.MainActivity">
+
+    <ProgressBar android:id="@+id/loading_spinner"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:visibility="invisible"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="With Callbacks"/>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/holo_blue_dark"
+                 android:textSize="40dp">
+
+        <com.hugomatilla.audioplayerview.AudioPlayerView
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"/>
+    </FrameLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:gravity="center"
+              android:text="With Text"/>
+
+    <com.hugomatilla.audioplayerview.AudioPlayerView
+        android:id="@+id/playText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:gravity="center"
+        android:padding="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        app:loadingText="loading..."
+        app:playText="play"
+        app:stopText="stop"
+        app:useIcons="false"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:gravity="center"
+              android:text="Custom Fonts"/>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/holo_orange_dark"
+                 android:textSize="40dp">
+
+        <com.hugomatilla.audioplayerview.AudioPlayerView
+            android:id="@+id/playCustomFonts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            app:loadingText="@string/customLoadingIcon"
+            app:playText="@string/customPlayIcon"
+            app:stopText="@string/customStopIcon"
+            app:useIcons="true"/>
+    </FrameLayout>
+</LinearLayout>

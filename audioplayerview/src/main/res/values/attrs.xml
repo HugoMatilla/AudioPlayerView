@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AudioPlayerTextView">
+        <attr name="playText" format="string"/>
+        <attr name="stopText" format="string"/>
+        <attr name="loadingText" format="string"/>
+        <attr name="useIcons" format="boolean"/>
+    </declare-styleable>
+</resources>

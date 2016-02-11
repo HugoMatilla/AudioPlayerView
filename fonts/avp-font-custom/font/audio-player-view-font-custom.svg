@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2016 by original authors @ fontello.com</metadata>
+<defs>
+<font id="audio-player-view-font-custom" horiz-adv-x="1000" >
+<font-face font-family="audio-player-view-font-custom" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="play-circled2" unicode="&#xe802;" d="m0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m115 0q0-158 114-271t271-114 271 114 114 271-114 272-271 113-271-113-114-272z m260-250l0 500 375-250z" horiz-adv-x="1000" />
+<glyph glyph-name="stop-circled" unicode="&#xe803;" d="m0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m250-250l500 0 0 500-500 0 0-500z" horiz-adv-x="1000" />
+<glyph glyph-name="cw-circled" unicode="&#xe807;" d="m0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m211 0q0-119 85-204t204-85q80 0 146 39t104 106l-102 58q-21-39-61-62t-87-24q-70 0-121 51t-51 121 51 121 121 51q61 0 107-37l-76-55 258-86 0 270-84-61q-84 86-205 86-119 0-204-85t-85-204z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

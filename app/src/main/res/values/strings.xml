@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AudioPlayerView</string>
+    <string name="customLoadingIcon">&#xe807;</string>
+    <string name="customPlayIcon">&#xe802;</string>
+    <string name="customStopIcon">&#xe803;</string>
+</resources>
