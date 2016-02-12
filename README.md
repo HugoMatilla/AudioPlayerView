@@ -1,5 +1,7 @@
 #AudioPlayerView
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AudioPlayerView-green.svg?style=true)](https://android-arsenal.com/details/1/3140)
+
 AudioPlayerView is an Android view that loads audio from an url and have basic playback tools.
 
 It makes use of the Android [MediaPlayer](http://developer.android.com/intl/es/reference/android/media/MediaPlayer.html) library.
@@ -49,6 +51,7 @@ Use it in your Activity, Fragment or Custom View
     AudioPlayerView audioPlayerView = (AudioPlayerView) findViewById(R.id.player);
     audioPlayerView.withUrl(url);
 ```
+
 ## Callbacks
 There are 3 callbacks:
 
