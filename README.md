@@ -32,7 +32,7 @@ Add the view to your xml.
 ```xml
 
     <com.hugomatilla.audioplayerview.AudioPlayerView
-                android:id="@+id/audioplayerview"
+                android:id="@+id/player"
                 ...
     />
 ```
@@ -41,7 +41,7 @@ Use it in your Activity, Fragment or Custom View
 ```java
     
     String url = "url-to-your-mp3-file.mp3"
-    AudioPlayerView audioPlayerView = (AudioPlayerView) findViewById(R.id.audioplayerview);
+    AudioPlayerView audioPlayerView = (AudioPlayerView) findViewById(R.id.player);
     audioPlayerView.withUrl(url);
 ```
 ## Callbacks
@@ -88,7 +88,7 @@ If you prefer to use text, add the texts to the xml file, and `app:useIcons="fal
 
 ```xml
 
-    <com.hugomatilla.audioplayerview.lib.AudioPlayerView
+    <com.hugomatilla.audioplayerview.AudioPlayerView
         ...
         app:loadingText="loading..."
         app:playText="play"
@@ -113,6 +113,25 @@ You can use your own icon fonts.
 ``` 
 
 You can create your own icon fonts with [fontello.com](http://fontello.com/)
+
+## API 
+
+The only public method to manage the audio playback is `toggleAudio()` 
+
+It plays the audio if it is stopped or it was never started (previous load), and it stops the audio if it is playing. 
+
+## Destroy
+
+Dont forget to destroy the AudioPlayerView when you don't need it anymore. The `onDestroy()` method of the activity is a good place to have it.
+
+```java
+
+    @Override
+    protected void onDestroy() {
+        audioPlayerView.destroy();
+        super.onDestroy();
+    }
+```
 
 ##License
 The MIT License (MIT)
