@@ -6,14 +6,19 @@ It makes use of the Android [MediaPlayer](http://developer.android.com/intl/es/r
 
 ![alt text](./art/AudioPlayerView-Sample.gif)  
 
-Unfortunately this gif doesn't play audio :) check the sample app to hear it.
+_Unfortunately this gif doesn't play audio :) check the sample app to hear it._
 
 
 ## Include
 
-Include the Gradle dependency
+Include the Gradle dependency from `jcenter()`
 
 ```java
+
+    repositories {
+        ...
+        jcenter()
+    }
 
     dependencies {
         ...
