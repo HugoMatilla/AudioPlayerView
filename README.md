@@ -2,6 +2,7 @@
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AudioPlayerView-green.svg?style=true)](https://android-arsenal.com/details/1/3140)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![](https://jitpack.io/v/HugoMatilla/AudioPlayerView.svg)](https://jitpack.io/#HugoMatilla/AudioPlayerView)
 
 
 AudioPlayerView is an Android view that loads audio from an url and have basic playback tools.
@@ -12,21 +13,24 @@ It makes use of the Android [MediaPlayer](http://developer.android.com/intl/es/r
 
 _Unfortunately this gif doesn't play audio :) check the sample app to hear it._
 
-
+## Update from 1.0.0 to 1.0.1
+Change the package repository to jitpack as explained in next section.
 ## Include
 
-Include the Gradle dependency from `jcenter()`
+Include the Gradle dependency from `jitpack`
 
 ```java
 
-    repositories {
-        ...
-        jcenter()
+    allprojects {
+        repositories {
+            ...
+            maven { url "https://jitpack.io" }
+        }
     }
 
     dependencies {
         ...
-        compile 'com.hugomatilla:audioplayerview:1.0.0'
+        compile 'com.github.HugoMatilla:AudioPlayerView:v1.0.1'
     }
 ```
 
