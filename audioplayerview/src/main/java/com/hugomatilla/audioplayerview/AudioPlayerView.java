@@ -223,6 +223,7 @@ public class AudioPlayerView extends TextView {
         if (mediaPlayer != null) {
             mediaPlayer.release();
             mediaPlayer = null;
+            audioReady = false;
         }
     }
 
