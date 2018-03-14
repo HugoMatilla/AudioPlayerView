@@ -1,4 +1,4 @@
-#AudioPlayerView
+# AudioPlayerView
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AudioPlayerView-green.svg?style=true)](https://android-arsenal.com/details/1/3140)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
@@ -34,7 +34,7 @@ Include the Gradle dependency from `jitpack`
     }
 ```
 
-##Permissions
+## Permissions
 
 AudioPlayerView adds automatically the `android.permission.INTERNET`  permission.
 
@@ -111,7 +111,7 @@ If you prefer to use text, add the texts to the xml file, and `app:useIcons="fal
     />
 ``` 
 
-###Custom Icons
+### Custom Icons
 
 You can use your own icon fonts.
 
@@ -147,7 +147,7 @@ Dont forget to destroy the AudioPlayerView when you don't need it anymore. The `
     }
 ```
 
-##License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2016 Hugo Matilla
